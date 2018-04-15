@@ -2,13 +2,13 @@
   "repos": [
     {
       "name": "repo1",
-      "url": "repo1url",
+      "url": "https://github.com/ManikyaVinay/repo-1.git",
       "username": "repo1user",
       "password": "repo1pwd"
     },
     {
       "name": "repo2",
-      "url": "repo2url",
+      "url": "https://github.com/ManikyaVinay/repo-2.git",
       "username": "repo2user",
       "password": "repo2pwd"
     }
