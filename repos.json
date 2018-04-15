@@ -1,0 +1,16 @@
+{
+  "repos": [
+    {
+      "name": "repo1",
+      "url": "repo1url",
+      "username": "repo1user",
+      "password": "repo1pwd"
+    },
+    {
+      "name": "repo2",
+      "url": "repo2url",
+      "username": "repo2user",
+      "password": "repo2pwd"
+    }
+  ]
+}
