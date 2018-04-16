@@ -1,17 +1,7 @@
 
 node {
     def reposlist = []
-    echo 'Checkout is in progress..'
-    
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-    doGenerateSubmoduleConfigurations: false, 
-    submoduleCfg: [], 
-    userRemoteConfigs: [[credentialsId: 
-    'aafadd97-6037-457e-9ea5-3f20b7c61e02', 
-    url: 'https://github.com/ManikyaVinay/sysconfigs.git']]])
-    
-    echo 'Checkout is completed..'
-    
+       
     def myrepos = readJSON file: "repos.json";
     def repos_list = myrepos['repos']
 
