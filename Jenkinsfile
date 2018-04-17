@@ -1,5 +1,6 @@
 
 node {
+    checkout scm
     def reposlist = []
        
     def myrepos = readJSON file: "repos.json";
