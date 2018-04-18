@@ -9,9 +9,9 @@ node {
     echo "environment variables:"
     println env
     println env.getEnvironment()
-    echo env.GIT_COMMIT 
-    echo env.GIT_URL 
-    echo env.GIT_BRANCH
+    println env.GIT_COMMIT 
+    println env.GIT_URL 
+    println env.GIT_BRANCH
     
     reposlist = ['repo1','repo2']
     repos_list.each{
