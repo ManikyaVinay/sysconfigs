@@ -7,9 +7,10 @@ node {
     def repos_list = myrepos['repos']
 
     echo "environment variables:"
-    echo GIT_COMMIT 
-    echo GIT_URL 
-    echo GIT_BRANCH
+    echo env
+    echo env.GIT_COMMIT 
+    echo env.GIT_URL 
+    echo env.GIT_BRANCH
     
     reposlist = ['repo1','repo2']
     repos_list.each{
