@@ -6,7 +6,10 @@ node {
     def myrepos = readJSON file: "repos.json";
     def repos_list = myrepos['repos']
 
-    echo "repo1: ${myrepos.repos[0].url}"
+    echo "environment variables:"
+    echo GIT_COMMIT 
+    echo GIT_URL 
+    echo GIT_BRANCH
     
     reposlist = ['repo1','repo2']
     repos_list.each{
