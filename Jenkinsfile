@@ -8,6 +8,7 @@ node {
 
     echo "environment variables:"
     println env
+    println env.getEnvironment()
     echo env.GIT_COMMIT 
     echo env.GIT_URL 
     echo env.GIT_BRANCH
