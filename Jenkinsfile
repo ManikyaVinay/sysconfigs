@@ -35,5 +35,5 @@ node{
     println("jsonBuilder")
     def root = jsonBuilder repos: repos_list
 
-    print json.toString()
+    print jsonBuilder.toString()
 }
