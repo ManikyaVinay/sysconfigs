@@ -47,12 +47,10 @@ node{
     //writeFile file: 'repos.json', text: outJson, encoding: 'UTF-8'
     
     println ""
-    def fileContents = new File(outputFile).text
-    println "File contents : " + fileContents
-    println ""
-    println "File Contents PrettyPrint"
+    def myrepos1 = readJSON file: "repos.json";
+    def repos_list1 = myrepos1['repos']
     println "========================="
-    println groovy.json.JsonOutput.prettyPrint(fileContents)
+    println repos_list1
     
     sh('git add .')
     sh('git commit -m "updated json with commit ids"')
