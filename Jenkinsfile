@@ -54,7 +54,7 @@ node{
     println "========================="
     println JsonOutput.prettyPrint(fileContents)
     
-    sh('git add repos.json')
+    sh('git add .')
     sh('git commit -m "updated json with commit ids"')
     sh('git push')
     
