@@ -4,13 +4,15 @@
       "name": "repo1",
       "url": "https://github.com/ManikyaVinay/repo-1.git",
       "username": "repo1user",
-      "password": "repo1pwd"
+      "password": "repo1pwd",
+      "lastcommit":""
     },
     {
       "name": "repo2",
       "url": "https://github.com/ManikyaVinay/repo-2.git",
       "username": "repo2user",
-      "password": "repo2pwd"
+      "password": "repo2pwd",
+      "lastcommit":""
     }
   ]
 }
