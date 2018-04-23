@@ -14,6 +14,7 @@ node{
         println "projecturl, ${projectURL}"
         def commits = new groovy.json.JsonSlurper().parse(projectURL.newReader())
         def lastestcommitid = commits[0].sha
+        println "lastestcommitid, ${lastestcommitid}"
         if( (${it.lastcommit} != lastestcommitid) || !${it.lastcommit}?.trim() ) {
             println "commits are different/lastcommit is empty(first time build), so should call shared process lib"
             //here we should call shared process lib function
