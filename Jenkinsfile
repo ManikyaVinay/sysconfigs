@@ -27,4 +27,9 @@ node{
         println 'after updating lastcommit'
         println it
     }
+    println "final list after updations"
+    println repos_list
+    def jsonSlurper = new JsonSlurper()
+    def object = jsonSlurper.parseText('{ "repos": ${repos_list} }')
+    println object
 }
