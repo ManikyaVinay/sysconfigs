@@ -52,7 +52,7 @@ node{
     println ""
     println "File Contents PrettyPrint"
     println "========================="
-    println JsonOutput.prettyPrint(fileContents)
+    println groovy.json.JsonOutput.prettyPrint(fileContents)
     
     sh('git add .')
     sh('git commit -m "updated json with commit ids"')
