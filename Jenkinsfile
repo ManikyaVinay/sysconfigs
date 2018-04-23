@@ -30,6 +30,6 @@ node{
     println "final list after updations"
     println repos_list
     def jsonSlurper = new groovy.json.JsonSlurper()
-    def object = jsonSlurper.parseText('{ "repos": ${repos_list} }')
+    def object = jsonSlurper.parseText('{ "repos": repos_list }')
     println object
 }
