@@ -15,15 +15,15 @@ node{
         def commits = new groovy.json.JsonSlurper().parse(projectURL.newReader())
         def lastestcommitid = "${commits[0].sha}"
         if( (${it.lastcommit} != lastestcommitid) || !${it.lastcommit}?.trim() ) {
-            echo "commits are different/lastcommit is empty(first time build), so should call shared process lib"
+            println "commits are different/lastcommit is empty(first time build), so should call shared process lib"
             //here we should call shared process lib function
         }
         else{
-            echo "no need of shared process lib as lastcommit is not empty or commits are same"
+            println "no need of shared process lib as lastcommit is not empty or commits are same"
         }
         
         it.lastcommit = latestcommitid
-        echo 'after updating lastcommit'
-        echo it
+        println 'after updating lastcommit'
+        println it
     }
 }
