@@ -36,7 +36,7 @@ node{
     def root = jsonBuilder repos: repos_list
 
     print jsonBuilder.toString()
-    writeJSON file: 'repos.json', json: jsonBuilder
+    writeJSON file: 'repos.json', json: {'repos':repos_list}
     
     sh('git add repos.json')
     sh('git commit -m "updated json with commit ids"')
