@@ -23,7 +23,7 @@ node{
             println "no need of shared process lib as lastcommit is not empty or commits are same"
         }
         
-        it.lastcommit = latestcommitid
+        it.lastcommit = lastestcommitid
         println 'after updating lastcommit'
         println it
     }
