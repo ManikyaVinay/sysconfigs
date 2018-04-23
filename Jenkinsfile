@@ -33,7 +33,7 @@ node{
     def jsonBuilder = new groovy.json.JsonBuilder()
 
     println("jsonBuilder")
-    def root = json repos: repos_list
+    def root = jsonBuilder repos: repos_list
 
     print json.toString()
 }
