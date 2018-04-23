@@ -36,7 +36,8 @@ node{
     def root = jsonBuilder repos: repos_list
 
     print jsonBuilder.toString()
-    writeJSON file: 'repos.json', json: {"repos":repos_list}
+    def outJson = groovy.json.JsonOutput.toJson(jsonBuilder.toString())
+    writeFile file: 'repos.json', text: outJson, encoding: 'UTF-8'
     
     sh('git add repos.json')
     sh('git commit -m "updated json with commit ids"')
