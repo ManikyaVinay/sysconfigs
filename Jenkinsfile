@@ -14,7 +14,7 @@ node{
         def lastestcommitid = "${commits[0].sha}"
         if( (${it.lastcommit} != lastestcommitid) || !${it.lastcommit}?.trim() ) {
             echo "commits are different/lastcommit is empty(first time build), so should call shared process lib"
-            # here we should call shared process lib function
+            //here we should call shared process lib function
         }
         else{
             echo "no need of shared process lib as lastcommit is not empty or commits are same"
