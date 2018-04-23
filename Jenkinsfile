@@ -7,6 +7,7 @@ node{
     
     repos_list.each{
         def gitUrl = "https://api.github.com/repos/ManikyaVinay/${it.name}/commits"
+        println "gitURl , ${gitUrl}"
 
         // Reading projects from GitLab REST API
         def projectURL = new URL("${gitUrl}")
