@@ -35,7 +35,8 @@ node{
     println("jsonBuilder")
     //def root = jsonBuilder repos: repos_list
     jsonBuilder.repos{repos_list}
-
+    
+    println pwd()
 
     String outputFile = 'repos.json'
     def fileWriter = new FileWriter(outputFile)
