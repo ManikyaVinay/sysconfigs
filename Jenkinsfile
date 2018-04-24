@@ -26,8 +26,8 @@ node{
         it.lastcommit = lastestcommitid
         println 'after updating lastcommit'
         println it
-        
-        git url: 'https://api.github.com/repos/ManikyaVinay/repo-1/commits'
+        git changelo: 'master', credentialsId: '90b57e382f417c80d53e7f260776add7', url: 'https://api.github.com/repos/ManikyaVinay/repo-1/commits'
+        //git url: 'https://api.github.com/repos/ManikyaVinay/repo-1/commits'
     }
     println "final list after updations"
     println repos_list
