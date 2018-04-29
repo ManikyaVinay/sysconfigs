@@ -33,11 +33,12 @@ node{
     println repos_list
 
     def jsonBuilder = new groovy.json.JsonBuilder()
+    def root = jsonBuilder.repos {repos_list}
 
     println("jsonBuilder")
     //def root = jsonBuilder repos: repos_list
     jsonBuilder.repos{repos_list}
-    println jsonBuilder.toPrettyString()
+    prin//tln jsonBuilder.toPrettyString()
    
     String outputFile = 'repos.json'
     def fileWriter = new FileWriter(outputFile)
