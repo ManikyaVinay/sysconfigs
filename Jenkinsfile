@@ -37,13 +37,12 @@ node{
     println("jsonBuilder")
     //def root = jsonBuilder repos: repos_list
     jsonBuilder.repos{repos_list}
-    
-    println pwd()
-
+    println jsonBuilder.toPrettyString()
+   
     String outputFile = 'repos.json'
     def fileWriter = new FileWriter(outputFile)
     jsonBuilder.writeTo(fileWriter)
-    fileWriter.flush()
+    //fileWriter.flush()
     
     //print jsonBuilder.toString()
     //def outJson = groovy.json.JsonOutput.toJson(jsonBuilder.toString())
